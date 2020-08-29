@@ -4,8 +4,8 @@ end
 
 # call your method here!
 
-def example
-   puts "print code 1 first"
-   yield
-   puts "print code 3 last"
+hello_t(["Tim", "Tom", "Jim"]) do |name|
+  if name.start_with?("T")
+    puts "Hi, #{name}"
+  end
 end
